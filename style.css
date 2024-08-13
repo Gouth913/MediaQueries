@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.text-block {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        background-color: lightgreen;
+    }
+
+    .text-block {
+        color: darkgreen;
+        flex: 1 1 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-color: lightblue;
+    }
+
+    .text-block {
+        color: darkblue;
+        flex: 1 1 45%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        background-color: lightcoral;
+    }
+
+    .text-block {
+        color: darkred;
+        flex: 1 1 100%;
+    }
+}
